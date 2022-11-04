@@ -4,7 +4,7 @@
 }
 
 header{
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(21, 3, 56);
     color: white;
     display: flex;
     height: 100vh;
@@ -13,35 +13,37 @@ header{
 .boxTitle{
     width: 50vw;
     text-align: left;
-    padding-top: 40vh;
+    padding-top: 35vh;
 }
 
 h1{
-    margin-left: 20vw;
     font-size: 3.5em;
 }
 
 h2{
-    margin-left: 20vw;
     font-size: 2.5em;
 }
 
-.boxTitle div{
-    margin-top: 10vh;
+.sousBoxTitle{
+    width: 25vw;
+    margin: auto;
+}
+.boxTitle .cv{
+    margin: 10vh 20vw;
+    width: 60vw;
 }
 
 .boxTitle a{
-    color: white;
+    color: black;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 3%;
-    background-color: blue;
-    margin-left: 25vw;
+    background-color: rgb(108, 108, 250);
 }
 
 .boxTitle a:hover{
     font-size: 1.5em;
-    margin-left: 23vw;
+    margin-left: -3vw;
 }
 
 .boxImg{
@@ -49,9 +51,9 @@ h2{
 }
 
 .boxImg img{
-    width: 40%;
-    margin: 40vh 30%;
-    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .presentation{
@@ -66,14 +68,24 @@ h3{
     margin: 2%;
 }
 
+.presentation p{
+    font-size: 1.3em;
+}
+
+.backDiv{
+    background-color: rgb(108, 108, 250);
+    margin-top: 7vh;
+}
 .skills{
     max-width: 1000px;
     margin: auto;
+    color: black;
+    padding: 3%;
 }
 
 .skills p{
-    font-weight: bolder;
     margin: 3% 5%;
+    font-size: 1.3em;
 }
 
 .skills ul{
@@ -86,23 +98,21 @@ h3{
     margin: 0% 2%;
     padding: 1.5%;
     border-radius: 30px;
-    background-color: blue;
+    background-color: rgb(21, 3, 56);
     color: white;
+    min-width: 60px;
+    text-align: center;
 }
 
 .project{
     max-width: 1000px;
     margin: 1% auto;
-    background-color: rgb(44, 44, 44);
     padding: 1%;
 }
 
-.project h3{
-    color: white;
-}
 
 .projectInfo{
-    background-color: rgb(173, 154, 154);
+    background-color: rgb(108, 108, 250);
     padding: 2%;
     margin: 3% 3%;
 }
@@ -132,8 +142,31 @@ h3{
     margin: 0% 2%;
     padding: 1%;
     border-radius: 30px;
-    background-color: blue;
+    background-color: rgb(21, 3, 56);
+    min-width: 60px;
+    text-align: center;
     color: white;
+}
+
+.recommandation{
+    max-width: 700px;
+    margin: auto;
+    color: black;
+    padding: 3%;
+}
+
+.recommandation2{
+    background-color: white;
+    padding: 4%;
+    margin-top: 3vh;
+}
+
+.recommandation strong{
+    font-size: 1.3em;
+}
+.recommandation p{
+    font-size: 1.2em;
+    margin-top: 1vh;
 }
 
 footer{
@@ -156,4 +189,110 @@ footer a{
     color: white;
     padding: 2%;
     text-decoration: none;
+}
+
+
+@media (max-width:1200px) and (min-width: 800px) {
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    .boxTitle .cv{
+        margin: 5vh 15vw;
+    }
+    .boxTitle a:hover{
+        font-size: 1.1em;
+        margin-left: -1vw;
+    }
+    .presentation{
+        max-width: 750px;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    .presentation p{
+        font-size: 1.2em;
+    }
+    .skills{
+        max-width: 750px;
+    }
+    
+    .skills p{
+        font-size: 1.1em;
+    }
+    .project{
+        max-width: 750px;
+    }
+    .TitlePoject{
+        font-size: 1.2em;
+    }
+    .recommandation{
+        max-width: 600px;
+    }
+    .recommandation strong{
+        font-size: 1.2em;
+    }
+    .recommandation p{
+        font-size: 1em;
+    }
+  }
+
+@media (max-width:800px){
+    .boxTitle{
+        width: 100vw;
+    }
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    .sousBoxTitle{
+        width: 200px;
+    }
+    .boxTitle .cv{
+        margin: 5vh 38vw;
+    }
+    .boxTitle a:hover{
+        font-size: 1.2em;
+        margin-left: -1vw;
+    }
+    .boxImg{
+        display: none;
+    }
+    h3{
+        font-size: 1.3em;
+    }
+    .presentation p{
+        font-size: 1em;
+    }
+    .skills p{
+        font-size: 1.1em;
+    }
+    .skills ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skills li{
+        margin: 2% 2%;
+        padding: 1.2%;
+    }
+    .TitlePoject{
+        font-size: 1.1em;
+    }
+    .skills2 ul{
+        flex-wrap: wrap;
+    }
+    .skills2 li{
+        margin: 2% 2%;
+    }  
+    .recommandation strong{
+        font-size: 1.1em;
+    }
+    .recommandation p{
+        font-size: 1em;
+        margin-top: 1vh;
+    }
 }
